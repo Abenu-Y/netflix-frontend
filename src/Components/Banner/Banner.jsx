@@ -16,7 +16,8 @@ const Banner = () => {
             try {
                 //   const request = await axios.get(requests.fetchNetflixOriginals)
                 //   const request = await axios.get(requests[0].fetchUrl)
-                  const request = await axios.get(`http://localhost:1234/fetchData`)
+                //   const request = await axios.get(`http://localhost:1234/fetchData`)
+                  const request = await axios.get(`https://netflix-backend-6u8y.onrender.com/fetchData`)
  
                 //   console.log(request)
                   setMovie(request.data.results[Math.floor(Math.random()*request.data.results.length)])

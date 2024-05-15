@@ -19,7 +19,8 @@ function Row({title,fetchUrl,isLargeRow}) {
         (async ()=>{
             
             try{   
-            const request = await axios.get(`http://localhost:1234/fetchData${fetchUrl}`)
+            // const request = await axios.get(`http://localhost:1234/fetchData${fetchUrl}`)
+            const request = await axios.get(`https://netflix-backend-6u8y.onrender.com/fetchData${fetchUrl}`)
                     setMovies(request.data.results)
             }
             catch (error) {
