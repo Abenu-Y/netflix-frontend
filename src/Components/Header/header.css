@@ -1,0 +1,115 @@
+
+.nav-outer-wrapper{
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    font-size: 14px;
+    z-index: 99;
+}
+
+.nav-inner-wrapper{
+    position: relative;
+    padding-left: 3%;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    z-index: 1;
+    transition:all 0.5s;
+    transition-timing-function: ease-in;
+}
+.black{
+  /* background-color: #111; */
+  background-color: #242424;
+}
+.netflix-logo img{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-icons {
+    position: absolute;
+    right: 4%;
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icons:nth-child(){
+  margin-right: 1rem;
+}
+
+/* ? drop down  */
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    position: absolute;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {background-color: #111;}
+
+.dropbtn span {
+  font-size: 14px;
+} 
+
+.first-navigation{
+  display: none;
+}
+.dropdown{
+  display: block;
+}
+
+#myDropdown{
+  background-color: #242424;
+}
+
+  @media(min-width:800px){
+
+    #weta{
+      display: none;
+    }
+    .first-navigation{
+        display: block;
+    }
+
+    .first-navigation ul {
+      list-style: none;
+      display: flex;
+  }
+  .first-navigation ul li {
+      margin-left: 1.5rem;
+  }
+  .first-navigation ul li a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.87);
+  }
+ 
+  } 
+.disp {display:none !important;}
