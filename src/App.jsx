@@ -13,7 +13,7 @@ import SignIn from "./Components/LogIn/SignIn/SignIn"
 
 // import { createBrowserRouter,RouterProvider } from "react-router-dom"
 // import { Protected } from "./Pages/Home/Protected"
-import { AuthContext } from "./Components/auth/Context/AuthContext"
+// import { AuthContext } from "./Components/auth/Context/AuthContext"
 
 function App() {
 
@@ -53,9 +53,9 @@ function App() {
   // ]);
   
   return (
-    <AuthContext>
+  
 
-    {/* <RouterProvider router={router}></RouterProvider> */}
+
     
   <Routes>
      
@@ -80,7 +80,7 @@ function App() {
    </Routes>
       
     
-    </AuthContext>
+   
   )
 }
 

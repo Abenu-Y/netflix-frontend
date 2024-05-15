@@ -9,7 +9,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import netflixLogo from '../../assets/Images/icons/nflxlogo.png'
 import { Link } from 'react-router-dom';
 
-import {signOut,getAuth} from 'firebase/auth'
+// import {signOut,getAuth} from 'firebase/auth'
 
 
 function Header() {
@@ -30,15 +30,15 @@ function Header() {
 //           }
 //      }
 
-const auth = getAuth()
-async function handleSignOut(){
-    try{
-          await signOut(auth)
-    }
-    catch(err){
-        console.log(err)
-    }
-}
+// const auth = getAuth()
+// async function handleSignOut(){
+//     try{
+//           await signOut(auth)
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
 
 
     useEffect(() => {
